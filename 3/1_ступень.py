@@ -142,7 +142,7 @@ class Grid:
         print(tabulate.tabulate(table_data, headers=headers, tablefmt='grid'))
 
 if __name__ == '__main__':
-    grid = Grid(1, 1, 20, 20, f, mu, 5, 0)  # Уменьшил размер сетки для наглядности
+    grid = Grid(1, 1, 20, 20, f, mu, 5, 0)  
     max_iterations = 1000
     iterations, acc, error = grid.solve(1e-14, max_iterations, True)
     
